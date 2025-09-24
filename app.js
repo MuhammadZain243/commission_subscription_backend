@@ -56,6 +56,10 @@ app.get('/health', (req, res) => {
   );
 });
 
+app.get('/', (req, res) => {
+  res.success('Welcome to the Commission Subscription Platform API');
+});
+
 // API routes
 app.use('/api', routes);
 
