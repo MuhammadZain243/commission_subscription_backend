@@ -1,28 +1,43 @@
-export const ROLES = {
+const ROLES = {
   ADMIN: 'ADMIN',
   MANAGER: 'MANAGER',
   SALESPERSON: 'SALESPERSON',
 };
 
-export const ORDER_STATUS = {
+const ORDER_STATUS = {
   CREATED: 'CREATED',
   PAID: 'PAID',
   REFUNDED: 'REFUNDED',
   CANCELED: 'CANCELED',
 };
 
-export const SUB_STATUS = {
+const SUB_STATUS = {
   ACTIVE: 'ACTIVE',
   PAST_DUE: 'PAST_DUE',
   CANCELED: 'CANCELED',
 };
 
-export const PLAN_CYCLE = {
+const PLAN_CYCLE = {
   MONTHLY: 'MONTHLY',
   YEARLY: 'YEARLY',
 };
 
-export const ORDER_LINE_KIND = {
+const ORDER_LINE_KIND = {
   PLAN: 'PLAN',
   ADDON: 'ADDON',
+};
+
+const COMMISSION_STATUS = {
+  PENDING: 'PENDING',
+  APPROVED: 'APPROVED',
+  PAID: 'PAID',
+};
+
+module.exports = {
+  ROLES,
+  ORDER_STATUS,
+  SUB_STATUS,
+  PLAN_CYCLE,
+  ORDER_LINE_KIND,
+  COMMISSION_STATUS,
 };
